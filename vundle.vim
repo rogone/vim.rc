@@ -20,18 +20,19 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 "deoplete
-"if has('nvim')
-  "Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-  "Plugin 'Shougo/deoplete.nvim'
-  "Plugin 'roxma/nvim-yarp'
-  "Plugin 'roxma/vim-hug-neovim-rpc'
-"endif
+if has('nvim')
+  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plugin 'Shougo/deoplete.nvim'
+  Plugin 'roxma/nvim-yarp'
+  Plugin 'roxma/vim-hug-neovim-rpc'
+endif
 "end deoplete
 "Plugin 'SirVer/ultisnips'
 " All of your Plugins must be added before the following line
 Plugin 'ervandew/supertab'
 Plugin 'inkarkat/vim-mark'
+Plugin 'inkarkat/vim-ingo-library'
 "set rtp+=/Users/luogang/.fzf/
 Plugin 'junegunn/fzf.vim'
 Plugin 'junegunn/fzf'

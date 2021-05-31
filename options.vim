@@ -100,4 +100,4 @@ nnoremap <silent> <F12> :A<CR>
 
 hi PmenuSel ctermfg=255 ctermbg=242 guibg=#808080
 set colorcolumn=120
-highlight ColorColumn ctermbg=red
+highlight ColorColumn ctermbg=grey
