@@ -19,6 +19,7 @@ Plugin 'scrooloose/nerdcommenter'
 "Plugin 'python-mode/python-mode'
 Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
+Plugin 'bling/vim-bufferline'
 "deoplete
 if has('nvim')
   Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
