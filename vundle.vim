@@ -47,6 +47,8 @@ Plugin 'airblade/vim-gitgutter'
 " end git
 Plugin 'itchyny/lightline.vim'
 Plugin 'feix760/taboo.vim'
+
+Plugin 'mbbill/undotree'
 call vundle#end()            " required
 "set runtimepath^=~/.vim/bundle/ctrlp.vim
 filetype plugin indent on    " required

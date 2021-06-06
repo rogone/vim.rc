@@ -39,9 +39,10 @@ let s:components = [
             \ 'vim-gitgutter.vim',
             \ 'vim-localhistory.vim',
             \ 'leaderf.vim',
-            \ 'deoplete.vim',
-            \ 'lightline.vim'
+            \ 'lightline.vim',
+            \ 'undotree.vim'
             \]
+            "\ 'deoplete.vim',
 
 for name in s:components
     call SourceComponent(name)
