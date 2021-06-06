@@ -49,6 +49,7 @@ Plugin 'itchyny/lightline.vim'
 Plugin 'feix760/taboo.vim'
 
 Plugin 'mbbill/undotree'
+Plugin 'junegunn/vim-easy-align'
 call vundle#end()            " required
 "set runtimepath^=~/.vim/bundle/ctrlp.vim
 filetype plugin indent on    " required
