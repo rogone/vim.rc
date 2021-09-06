@@ -40,7 +40,8 @@ let s:components = [
             \ 'vim-localhistory.vim',
             \ 'leaderf.vim',
             \ 'lightline.vim',
-            \ 'undotree.vim'
+            \ 'undotree.vim',
+            \ 'git-blame.vim'
             \]
             "\ 'deoplete.vim',
 

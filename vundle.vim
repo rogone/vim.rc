@@ -21,13 +21,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'jiangmiao/auto-pairs'
 Plugin 'bling/vim-bufferline'
 "deoplete
-if has('nvim')
-  Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plugin 'Shougo/deoplete.nvim'
-  Plugin 'roxma/nvim-yarp'
-  Plugin 'roxma/vim-hug-neovim-rpc'
-endif
+"if has('nvim')
+  "Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+  "Plugin 'Shougo/deoplete.nvim'
+  "Plugin 'roxma/nvim-yarp'
+  "Plugin 'roxma/vim-hug-neovim-rpc'
+"endif
 "end deoplete
 "Plugin 'SirVer/ultisnips'
 " All of your Plugins must be added before the following line
@@ -44,6 +44,7 @@ Plugin 'Yggdroot/LeaderF'
 " git
 Plugin 'tpope/vim-fugitive'
 Plugin 'airblade/vim-gitgutter'
+Plugin 'zivyangll/git-blame.vim'
 " end git
 Plugin 'itchyny/lightline.vim'
 Plugin 'feix760/taboo.vim'
