@@ -4,7 +4,6 @@ call plug#begin('~/.vim/plugged')
 "Plug 'gmarik/Vundle.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "nerdtree
-"Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'jistr/vim-nerdtree-tabs'
 Plug 'Xuyuanp/nerdtree-git-plugin'
@@ -16,13 +15,14 @@ Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'bling/vim-bufferline'
 "deoplete
-"if has('nvim')
-  "Plugin 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-"else
-  "Plugin 'Shougo/deoplete.nvim'
-  "Plugin 'roxma/nvim-yarp'
-  "Plugin 'roxma/vim-hug-neovim-rpc'
-"endif
+if has('nvim')
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+  Plug 'Shougo/deoplete.nvim'
+  Plug 'roxma/nvim-yarp'
+  Plug 'roxma/vim-hug-neovim-rpc'
+  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
+endif
 "end deoplete
 "snip
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'

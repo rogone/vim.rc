@@ -42,9 +42,9 @@ let s:components = [
             \ 'leaderf.vim',
             \ 'lightline.vim',
             \ 'undotree.vim',
+            \ 'deoplete.vim',
             \ 'git-blame.vim'
             \]
-            "\ 'deoplete.vim',
 
 for name in s:components
     call SourceComponent(name)
