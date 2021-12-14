@@ -28,7 +28,8 @@ let s:cwd = expand('<sfile>:p:h') . '/'
 "echom 'cwd:'.cwd 
 
 let s:components = [
-            \ 'vundle.vim',
+            "\ 'vundle.vim',
+            \ 'vim-plug.vim',
             \ 'options.vim',
             \ 'vim-go.vim',
             \ 'tagbar.vim',
