@@ -28,7 +28,8 @@ let s:cwd = expand('<sfile>:p:h') . '/'
 "echom 'cwd:'.cwd 
 
 let s:components = [
-            \ 'vundle.vim',
+            "\ 'vundle.vim',
+            \ 'vim-plug.vim',
             \ 'options.vim',
             \ 'vim-go.vim',
             \ 'tagbar.vim',
@@ -41,9 +42,9 @@ let s:components = [
             \ 'leaderf.vim',
             \ 'lightline.vim',
             \ 'undotree.vim',
+            \ 'deoplete.vim',
             \ 'git-blame.vim'
             \]
-            "\ 'deoplete.vim',
 
 for name in s:components
     call SourceComponent(name)

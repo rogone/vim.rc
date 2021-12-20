@@ -7,7 +7,6 @@ call vundle#begin()
 
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
-"Plugin 'honza/vim-snippets'
 Plugin 'fatih/vim-go'
 "nerdtree
 Plugin 'scrooloose/nerdtree'
@@ -29,7 +28,10 @@ Plugin 'bling/vim-bufferline'
   "Plugin 'roxma/vim-hug-neovim-rpc'
 "endif
 "end deoplete
+"snip
 "Plugin 'SirVer/ultisnips'
+"Plugin 'honza/vim-snippets'
+"end snip
 " All of your Plugins must be added before the following line
 Plugin 'ervandew/supertab'
 Plugin 'inkarkat/vim-mark'
