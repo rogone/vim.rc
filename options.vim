@@ -1,5 +1,5 @@
 " common options
-let mapleader="."
+let mapleader=","
 set fileencodings=utf-8,chinese,latin-1
 set termencoding=utf-8
 set encoding=utf-8

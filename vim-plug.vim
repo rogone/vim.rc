@@ -1,7 +1,5 @@
 " add plugin
 call plug#begin('~/.vim/plugged')
-" let Vundle manage Vundle, required
-"Plug 'gmarik/Vundle.vim'
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 "nerdtree
 Plug 'scrooloose/nerdtree', { 'on': 'NERDTreeToggle' }
@@ -14,16 +12,6 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'tpope/vim-surround'
 Plug 'jiangmiao/auto-pairs'
 Plug 'bling/vim-bufferline'
-"deoplete
-if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-else
-  Plug 'Shougo/deoplete.nvim'
-  Plug 'roxma/nvim-yarp'
-  Plug 'roxma/vim-hug-neovim-rpc'
-  Plug 'tbodt/deoplete-tabnine', { 'do': './install.sh' }
-endif
-"end deoplete
 "snip
 Plug 'SirVer/ultisnips' | Plug 'honza/vim-snippets'
 "end snip
@@ -33,8 +21,8 @@ Plug 'inkarkat/vim-mark'
 Plug 'inkarkat/vim-ingo-library'
 "set rtp+=/Users/luogang/.fzf/
 Plug 'junegunn/fzf.vim'
-"Plug 'junegunn/fzf'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf', { 'do': './install --all' }
 "registers
 Plug 'junegunn/vim-peekaboo' 
 Plug 'mg979/vim-localhistory'
@@ -49,4 +37,32 @@ Plug 'feix760/taboo.vim'
 
 Plug 'mbbill/undotree'
 Plug 'junegunn/vim-easy-align'
+Plug 'itchyny/vim-cursorword'
+Plug 'sebdah/vim-delve'
+Plug 'voldikss/vim-floaterm'
+Plug 'voldikss/LeaderF-floaterm'
+Plug 'puremourning/vimspector'
 call plug#end()
+
+" load local config of plugins
+let s:components = [
+            \ 'options.vim',
+            \ 'vim-go.vim',
+            \ 'tagbar.vim',
+            \ 'supertab.vim',
+            \ 'nerdtree.vim',
+            \ 'vim-mark.vim',
+            \ 'python.vim',
+            \ 'vim-gitgutter.vim',
+            \ 'vim-localhistory.vim',
+            \ 'leaderf.vim',
+            \ 'lightline.vim',
+            \ 'undotree.vim',
+            \ 'vim-cursorword.vim',
+            \ 'vim-floaterm.vim',
+            \ 'git-blame.vim'
+            \]
+
+for name in s:components
+    call SourceComponent(name)
+endfor

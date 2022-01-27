@@ -27,25 +27,5 @@ let s:cwd = expand('<sfile>:p:h') . '/'
 "echom $MYVIMRC
 "echom 'cwd:'.cwd 
 
-let s:components = [
-            "\ 'vundle.vim',
-            \ 'vim-plug.vim',
-            \ 'options.vim',
-            \ 'vim-go.vim',
-            \ 'tagbar.vim',
-            \ 'supertab.vim',
-            \ 'nerdtree.vim',
-            \ 'vim-mark.vim',
-            \ 'python.vim',
-            \ 'vim-gitgutter.vim',
-            \ 'vim-localhistory.vim',
-            \ 'leaderf.vim',
-            \ 'lightline.vim',
-            \ 'undotree.vim',
-            \ 'deoplete.vim',
-            \ 'git-blame.vim'
-            \]
+call SourceComponent('vim-plug.vim')
 
-for name in s:components
-    call SourceComponent(name)
-endfor
