@@ -22,3 +22,5 @@ au Filetype go nnoremap <Leader>vt <Plug>(go-def-vertical)
 au Filetype go nnoremap <Leader>tb <Plug>(go-def-tab)
 au Filetype go nnoremap <Leader>, <c-x><c-o>
 
+" disable default template on creating new file, use file-header
+let g:go_template_autocreate = 0

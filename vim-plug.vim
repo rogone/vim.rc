@@ -60,6 +60,7 @@ let s:components = [
             \ 'undotree.vim',
             \ 'vim-cursorword.vim',
             \ 'vim-floaterm.vim',
+            \ 'file-header.vim',
             \ 'git-blame.vim'
             \]
 
